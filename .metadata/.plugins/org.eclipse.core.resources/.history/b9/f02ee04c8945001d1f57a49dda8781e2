@@ -1,0 +1,36 @@
+package Entidades;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ClasseAuxiliar {
+	Scanner sc = new Scanner(System.in);
+
+	private int palpite;
+	private int numeroRamdom;
+
+	public int getNumeroRamdom() {
+		Random aleatorio = new Random();
+		numeroRamdom = aleatorio.nextInt(3);
+		System.out.println(numeroRamdom);
+		return numeroRamdom = aleatorio.nextInt(3);
+	}
+
+	public void setNumeroRamdom(int numeroRamdom) {
+		this.numeroRamdom = numeroRamdom;
+	}
+
+	public int getPalpite() {
+		return palpite;
+	}
+
+	public void setPalpite(int palpite) {
+		this.palpite = palpite;
+	}
+
+	public String toString() {
+		return "Parabéns, você acertou o numero: (" + getNumeroRamdom()+ ") seu palpite foi: ( " + getPalpite() + ")";
+
+	}
+
+}

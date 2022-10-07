@@ -1,0 +1,32 @@
+package Entidades;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ClasseAuxiliar {
+	Scanner sc = new Scanner(System.in);
+
+	private int palpite;
+
+	public int getNumeroRamdom() {
+		return numeroRamdom ;
+	}
+
+	public void setNumeroRamdom(int numeroRamdom) {
+		this.numeroRamdom = numeroRamdom;
+	}
+
+	public int getPalpite() {
+		return palpite;
+	}
+
+	public void setPalpite(int palpite) {
+		this.palpite = palpite;
+	}
+
+	public String toString() {
+		return "Parabéns, você acertou o numero: (" + getNumeroRamdom()+ ") seu palpite foi: ( " + getPalpite() + ")";
+
+	}
+
+}

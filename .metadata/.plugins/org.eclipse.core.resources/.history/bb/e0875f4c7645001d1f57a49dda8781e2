@@ -1,0 +1,42 @@
+package Entidades;
+
+public class ClasseAuxiliar {
+	
+	private int palpite;
+	private int numeroRamdom;
+	
+	
+	public int getNumeroRamdom() {
+		return numeroRamdom;
+	}
+
+	public void setNumeroRamdom(int numeroRamdom) {
+		this.numeroRamdom = numeroRamdom;
+	}
+
+	public int getPalpite() {
+		return palpite;
+	}
+
+	public void setPalpite(int palpite) {
+		this.palpite = palpite;
+	}
+	
+	
+	public void MetodoPrincipal () {
+		while (palpite != numeroRamdom) {
+			if (palpite < numeroRamdom) {
+				System.out.println("Seu palpite é menor que o numero sorteado.");
+			} else {
+				System.out.println("Seu palpite é maior que o numero sorteado.");
+			}
+			System.out.println("Digite um numero para ser sorteado: ");
+			palpite = sc.nextInt();
+		}
+	}
+	
+	public String toString() {
+		return "";
+	}
+	
+}

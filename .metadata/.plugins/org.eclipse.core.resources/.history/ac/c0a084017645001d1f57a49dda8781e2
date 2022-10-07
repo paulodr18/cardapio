@@ -1,0 +1,30 @@
+package Entidades;
+
+public class ClasseAuxiliar {
+	
+	private int palpite;
+	private int numeroRamdom;
+	
+	
+	public int getNumeroRamdom() {
+		return numeroRamdom;
+	}
+
+	public void setNumeroRamdom(int numeroRamdom) {
+		this.numeroRamdom = numeroRamdom;
+	}
+
+	public int getPalpite() {
+		return palpite;
+	}
+
+	public void setPalpite(int palpite) {
+		this.palpite = palpite;
+	}
+	
+	
+	public String toString() {
+		return "";
+	}
+	
+}

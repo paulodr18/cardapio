@@ -1,0 +1,26 @@
+package teste;
+
+import java.util.Scanner;
+
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Auxiliar auxiliar = new Auxiliar();
+		
+		String nome;
+		int idade;
+		double altura;
+		
+		System.out.println("Qual o seu nome");
+		nome = sc.next();
+		auxiliar.setNome(nome)= sc.next();
+		System.out.println("Qual a sua idade");
+		
+		System.out.println();
+		
+		System.out.println(nome);
+	}
+
+}

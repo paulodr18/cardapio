@@ -1,0 +1,27 @@
+package service;
+
+import java.util.Scanner;
+
+import Entidades.ClasseAuxiliar;
+
+public class CheckSorte {
+	Scanner sc = new Scanner(System.in);
+	ClasseAuxiliar classeAuxiliar = new ClasseAuxiliar();
+	
+	public void metodoPrincipal () {
+		while (classeAuxiliar.getPalpite() != classeAuxiliar.getNumeroRamdom()) {
+			if (classeAuxiliar.getPalpite() < classeAuxiliar.getNumeroRamdom()) {
+				System.out.println("Seu palpite é menor que o numero sorteado.");
+			} if(classeAuxiliar.getPalpite() > classeAuxiliar.getNumeroRamdom()) {
+				System.out.println("Seu palpite é maior que o numero sorteado.");
+			}
+			System.out.println("Digite um numero para ser sorteado: ");
+			classeAuxiliar.setPalpite(sc.nextInt());  
+			
+			
+			classeAuxiliar.toString();
+		}
+		
+		
+	}
+}

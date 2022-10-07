@@ -1,0 +1,38 @@
+package Entidades;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ClasseAuxiliar {
+	Scanner sc = new Scanner(System.in);
+	Random aleatorio = new Random();
+	
+	private int palpite;
+	private int numeroRamdom = aleatorio.nextInt(2)+1;
+	
+	
+
+	public int getNumeroRamdom() {
+		return numeroRamdom;
+	}
+	
+	public void setNumeroRamdom(int numeroRamdom) {
+		this.numeroRamdom = numeroRamdom;
+	}
+
+	public int getPalpite() {
+		return palpite;
+	}
+
+	public void setPalpite(int palpite) {
+		this.palpite = palpite;
+	}
+	
+	
+	public String toString() {
+		return "Parabéns, você acertou o numero: (" + numeroRamdom + ") seu palpite foi: ( " + palpite + ")";
+		
+		
+	}
+	
+}

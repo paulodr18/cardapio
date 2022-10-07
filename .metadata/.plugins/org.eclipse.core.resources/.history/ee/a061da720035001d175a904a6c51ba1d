@@ -1,0 +1,16 @@
+package teste;
+
+import java.util.Scanner;
+
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Auxiliar auxiliar = new Auxiliar();
+		
+		System.out.println("Qual o seu nome");
+		
+
+	}
+
+}

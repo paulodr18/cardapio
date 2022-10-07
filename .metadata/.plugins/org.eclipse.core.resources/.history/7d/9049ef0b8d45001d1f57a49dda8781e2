@@ -1,0 +1,21 @@
+package Entidades;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ClasseAuxiliar {
+	Scanner sc = new Scanner(System.in);
+
+	private int palpite;
+
+	public int getPalpite() {
+		return palpite;
+	}
+
+	public void setPalpite(int palpite) {
+		this.palpite = palpite;
+	}
+
+	
+
+}

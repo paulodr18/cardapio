@@ -1,0 +1,10 @@
+package Sorteio;
+
+public class Sorte {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
